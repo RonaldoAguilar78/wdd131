@@ -1,0 +1,29 @@
+body {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    font-size: 3.00em;
+}
+h2 {
+    font-size: 1.5em;
+    color: #02457a;
+}
+p, li {
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+#content {
+    background: white;
+    width: 50%;
+    min-height: 100%;
+    padding: 50px;
+}
+img {
+    width: 50%;
+    display: block;
+    margin: 50px auto;
+}
