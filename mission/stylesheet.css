@@ -5,25 +5,37 @@ body {
     padding: 40px;
     font-family: Arial, sans-serif;
 }
-h1 {
-    font-size: 3.00em;
+
+h1, h2 {
+    text-align: center;
+    letter-spacing: 2px;
 }
+
+h1 {
+    font-size: 3em;
+}
+
 h2 {
     font-size: 1.5em;
     color: #02457a;
 }
+
 p, li {
-    line-height: 1.6;
-    font-size: 1.05rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
+
 #content {
     background: white;
     width: 50%;
     min-height: 100%;
     padding: 50px;
+    border: 2px solid #cfcfcf;
 }
+
 img {
-    width: 50%;
+    width: 200px;
     display: block;
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
 }
