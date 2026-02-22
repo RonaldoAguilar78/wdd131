@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Josue Ronaldo Aguilar Palma">
+    <meta name="description" content="A credit card checkout form with a visual representation of the card.">
+    <title>Credit Card Checkout</title>
+    <link rel="stylesheet" href="creditcard.css">
+</head>
+<body>
+    <div class="checkout-wrapper">
+        <form id="checkoutForm">
+            <div class="card-visual-grid">
+                <div class="card card-back">
+                    <div class="magnetic-strip"></div>
+                    <div class="cvc-group">
+                        <label for="cvc">CVC/CVV</label>
+                        <input type="text" id="cvc" placeholder="xxx" maxlength="3" required>
+                    </div>
+                </div>
+                <div class="card card-front">
+                    <div class="total-label">TOTAL: $199</div>
+                    <div class="chip-icon"></div>
+                    <div class="input-card-number">
+                        <label for="creditCardNumber">CARD NUMBER</label>
+                        <input type="text" id="creditCardNumber" placeholder="1234 5678 9101 1020" maxlength="19" required>
+                    </div>
+                    <div class="input-card-holder">
+                        <label for="card-holder">CARD HOLDER</label>
+                        <input type="text" id="card-holder" placeholder="John Doe" required>
+                    </div>
+                    <div class="input-expiry">
+                        <label>EXPIRATION</label>
+                        <div class="expiry-fields">
+                            <input type="text" id="month" placeholder="MM" maxlength="2" required>
+                            <input type="text" id="year" placeholder="YY" maxlength="2" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="errors"></div>
+            <div class="submit-container">
+                <button type="submit" class="btn-submit">Submit Payment</button>
+            </div>
+        </form>
+    </div>
+    <script src="creditcard.js"></script>
+</body>
+</html>
