@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes Digital Book</title>
+    <meta name="author" content="Josue Ronaldo Aguilar Palma"> 
+    <meta name="description" content="A collection of recipes for delicious meals.">  
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Recipes Digital Book">
+    <meta property="og:description" content="A collection of recipes for delicious meals.">
+    <meta property="og:url" content="https://ronaldoaguilar78.github.io/wdd131/recipes/index.html">
+    <meta property="og:image" content="social-preview-image.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Recipes Digital Book">
+    <meta name="twitter:description" content="A collection of recipes for delicious meals.">
+    <meta name="twitter:image" content="social-preview-image.png">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+    <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+    <header>
+        <img class="headimg" src="images/recipe-book.png" alt="Recipe Book">
+        <h1>RECIPEBOOK</h1>
+    </header>
+
+    <div class="search-container">
+        <form action="/search" method="GET">
+            <input type="text" name="q" placeholder="Find a recipe">
+            <button type="submit" aria-label="Search">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <hr>
+
+    <main>
+        <article class="recipe-card">
+            <div class="recipe-image">
+                <img src="images/apple-crisp.jpg" alt="Apple Crisp">
+            </div>
+            
+            <div class="recipe-content"> <h2>Apple Crisp</h2>
+                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+                <p class="recipe-details">
+                    This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.
+                </p>
+            </div> </article>
+    </main>
+
+    <footer>
+    <div class="social-links">
+        <a href="https://instagram.com" aria-label="Instagram">
+            <img src="images/instagram_icon.svg" alt="" class="social-icon">
+        </a>
+        <a href="https://youtube.com" aria-label="YouTube">
+            <img src="images/youtube_icon.svg" alt="" class="social-icon">
+        </a>
+        <a href="https://pinterest.com" aria-label="Pinterest">
+            <img src="images/pinterest_icon.svg" alt="" class="social-icon">
+        </a>
+    </div>
+    <p>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+    </p>
+    </footer>
+</body>
+</html>

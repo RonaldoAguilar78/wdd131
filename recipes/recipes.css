@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+h1, h2 {
+    font-family: "Amatic SC", serif;
+}
+
+h2 {
+    color: #1988ad;
+    font-size: 2.5em;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.headimg {
+    width: 80px;
+    height: auto;
+}
+
+.search-container form {
+    display: flex;
+    border: 1px solid #333;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.search-container input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 250px;
+}
+
+.search-container button {
+    background: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    width: 100%;
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 15px;
+    max-width: 350px;
+}
+
+.recipe-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.recipe-details {
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+footer p a {
+    color: #0044cc;
+    text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    .recipe-card {
+        flex-direction: row;
+        max-width: 800px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .recipe-image img {
+        width: 300px;
+    }
+
+    .recipe-details {
+        display: block;
+    }
+    
+    .search-container {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .search-container form {
+        display: flex;
+        width: 100%;
+    }
+
+    .search-container input {
+        flex-grow: 1;
+        width: auto;
+        padding: 12px;
+    }
+    footer {
+        align-items: flex-end;
+        padding-right: 10%;
+    }
+}
